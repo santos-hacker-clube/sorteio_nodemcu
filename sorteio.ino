@@ -28,7 +28,7 @@ void setup() {
 void loop() {
 
   botaoSorteio = digitalRead(botaosorteio);
-  if ( == HIGH) {
+  if ( botaoSorteio == HIGH) {
     delay(10);
 
   } else {
