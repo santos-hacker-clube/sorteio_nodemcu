@@ -25,13 +25,12 @@
 #endif
 
 
-#include "index.h"
+#include "index.h" // Incluir o arquivo index.h
 
-// SORTEIO
+
 int botaoSorteio = 0;
 int randomSorteio;
 const int botaosorteio = 0;
-
 const char *ssid = APSSID;
 const char *password = APPSK;
 
@@ -47,16 +46,11 @@ void handleRoot() {
 void handleADC() {
   int a = digitalRead(botaosorteio);
   String adcValue = String(a);
-
   botaoSorteio = digitalRead(botaosorteio);
   if ( botaoSorteio == LOW) {
-
     randomSorteio = random(0, 100);
-    //Serial.println(randomSorteio);
     int x = randomSorteio;
     String sorteioValue = String(x);
-
-    //delay(10);
     server.send(200, "text/plane", sorteioValue);
     delay (1000);
   }
@@ -67,26 +61,18 @@ void handleADC() {
 void setup(void) {
 
   pinMode(0, INPUT_PULLUP);
-
   Serial.begin(115200);
-
   WiFi.softAP(ssid, password);
-
   delay(5000);
-
-
-
   Serial.println("");
   Serial.print("Connected to ");
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
   IPAddress myIP = WiFi.softAPIP();
-
   randomSeed(digitalRead(0));
   server.on("/", handleRoot);
   server.on("/readADC", handleADC);
-
   server.begin();
   Serial.println("HTTP server started");
 }
