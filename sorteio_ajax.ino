@@ -7,8 +7,8 @@
   botão flash, usando ajax.
 
   Autores:
-    Antonio Braga (www.antonio.mobi)
-    Thiago Ferauche (thiago.ferauche@gmail.com)
+  Antonio Braga (www.antonio.mobi)
+  Thiago Ferauche (thiago.ferauche@gmail.com)
 
   Grupo: Santos Hacker Clube
 
