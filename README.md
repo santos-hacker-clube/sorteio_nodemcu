@@ -16,7 +16,11 @@ Código para realizar o sorteio de brindes do Arduino Day 2020, utilizando um no
 
 NodeMCU Esp8266
 
-# Biblioteca
+# Bibliotecas
+
+ESP8266WiFi.h
+WiFiClient.h
+ESP8266WebServer.h
 
 # Código
 
