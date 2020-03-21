@@ -9,13 +9,18 @@ Código para realizar o sorteio de brindes do Arduino Day 2020, utilizando um no
 
 * Testar no ESP32
 
-Diagrama
+# Diagrama
 
-Materiais
 
-Biblioteca
+# Materiais
 
-Código
+NodeMCU Esp8266
 
-Autores
+# Biblioteca
+
+# Código
+
+https://github.com/santos-hacker-clube/sorteio_nodemcu/tree/master/sorteio_ajax
+
+# Autores
 
