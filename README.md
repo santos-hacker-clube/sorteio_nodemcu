@@ -8,3 +8,14 @@ Código para realizar o sorteio de brindes do Arduino Day 2020, utilizando um no
 * Os dados são atualizados via ajax no navegador 
 
 * Testar no ESP32
+
+Diagrama
+
+Materiais
+
+Biblioteca
+
+Código
+
+Autores
+
